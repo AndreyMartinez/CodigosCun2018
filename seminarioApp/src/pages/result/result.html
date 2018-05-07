@@ -1,0 +1,104 @@
+<ion-header>
+    <ion-toolbar style="text-align:center">
+        Resultado  Final
+    </ion-toolbar>
+</ion-header>
+<ion-content style="text-align:center;">
+    
+   
+<ion-item *ngIf="animals == 'tortuga' " class="item">
+        <h1>Qué mal fuiste una </h1>    
+    <img src="./assets/imgs/tortuga.svg">
+    <h1>Tortuga</h1>
+    <p>{{result}}/11</p>
+</ion-item>
+<ion-item *ngIf="animals == 'zorro' " class="item">
+        <h1> Pudiste ser mejor </h1>    
+    <img src="./assets/imgs/zorro.svg">
+        <h1>Fuiste un Zorro</h1>  
+        <p>{{result}}/11</p>  
+</ion-item>
+    <ion-item *ngIf="animals == 'leon' " class="item">
+            <h1> Excelente Fuiste un gran </h1>    
+        <img src="./assets/imgs/leon.svg">
+        <h1>Leon africano.
+            <br>
+             Reclama un dulce</h1> 
+             
+             <p>{{result}}/11</p>
+    </ion-item>
+
+    <form [formGroup]="formCode" (ngSubmit)="ver()">
+    <ion-label>Dijita el codigo para ver Respuesta</ion-label>    
+    <ion-input style="background-color:gray"class="form-control" formControlName="respuesta" name="respuestas" required  type="number" [(ngModel)]="respuestas"> </ion-input>    
+<div >
+        <button ion-button  >Comenzar</button>
+</div>    
+</form>
+    <ion-item *ngIf="mostrar === true">
+         <p>   Cuales son pasos claves involucrados en la resolución de problemas</p>
+         <br>
+         <p class="good">C.Explorar el reto / generar ideas/prepararse para la acción</p>
+         <hr>
+         <p> Que es CPS?</p>
+         <br>
+         <p class="good">B..Es un método contrastado por más de 40 años de investigación y resultados en las empresas para resolver retos o problemas de forma imaginativa e innovadora</p>
+     <hr>
+     <p>¿Qué es la transferencia de la tecnologia?</p>
+     <br>
+     <p class="good">C.Es el conjunto de acciones orientadas a facilitar el rendimiento comercial en el mercado de las capacidades investigadoras y los resultados de investigació</p>
+     <hr>
+     <p>Marque los 3 principales conceptos que definen la " lluvia de ideas "</p>
+     <br>
+     <p class="good">A.Basarse en una idea y que los demás sigan complementando esta.</p>
+     <p class="good">C.Pasarse las ideas y cada ponente complementa la idea anterior </p>
+     <p class="good">F. Que los ponentes definan una idea concreta basada en ideas anteriores</p>
+     <hr>
+     <p>Marque los 4 pasos de la "lluvia de ideas"</p>
+     <br>
+     <p class="good">B. Suspender el juicio</p>
+     <p class="good">D. Pensar libremente</p>
+     <p class="good">E. Buena cantidad de ideas</p>
+     <p class="good">F. El efecto multiplicador</p>
+
+     <hr>
+     <p> ¿ que acciones se pueden tomar para corregir las falencias en el poco conocimiento que se tiene acerca de la fundación?</p>
+     <br>
+     <p class="good">B.Pautar en diferentes medios de comunicación</p>
+
+     <hr>
+     <p>¿De que manera podemos afrontar los problemas que tienen las personas afro descendientes después de un conflicto armado?</p>
+     <br>
+     <p class="good">A. Realizar un estudio psicológico para determinar que tipo de problemas se generan después del conflicto</p>
+
+     <hr>
+     <p>Como logramos avanzar ante la población afro dependiente sin perder nuestros puntos fuertes</p>
+     <br>
+     <p class="good">A.realizar conferencias para saber cuales son nuestras falencias y reforzar los puntos buenos </p>
+     
+     <hr>
+     <p>De a acuerdo a la técnica de los seis sombreros, mencione ¿cuales son los seis colores que representan los seis sombreros?</p>
+     <br>
+     <p class="good">C.negro, blanco, verde, amarillo, rojo, azul</p>
+     
+     
+     <hr>
+     <p>¿Cual son las fases principales de la técnica de los seis sombreros?</p>
+     <br>
+     <p class="good">B. analizar, crear, evaluar</p>
+     
+     
+     <hr>
+     <p>Los resultados que se obtienen en la implementación de la técnica de los seis sombreros puede variar de acuerdo al orden en que se trabajen los colores de los sombreros</p>
+     <br>
+     <p class="good">A. Verdadero</p>
+
+  
+        </ion-item>
+
+
+
+    <ion-item *ngIf="mostrar === false">
+            <h1>Codigo invalido <br> O ingresa un codigo</h1>
+        </ion-item>
+</ion-content>

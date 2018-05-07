@@ -1,0 +1,44 @@
+<ion-content>
+<div class="found">
+
+  
+</div>
+
+
+<form [formGroup]="formCode"  (ngSubmit)="ejecutar()" style="
+position:  relative;
+top:7%;
+text-align:  center;
+" > 
+<div style="color:black;">
+
+  
+  <h1>Seminario APP</h1>
+  <h2>Bienvenidos a nuestro questionario</h2>  
+  <p>Faider Stiven Bastidas Gomez</p>   
+  <p>Raphael Andrey Martínez Velásquez</p>
+  <p>Deicy Jhohana Wilches Palacios </p>
+  <p>Walter Leandro Gallo Reay </p>
+  <p>Daniel Felipe Arevalo Mahecha</p>
+  <p>Jessica Nataly Bello</p>
+</div>
+      <ion-item style="
+      width: 316px;
+      left: 31px;
+      height: 67px;
+      border-radius: 5%;
+  ">
+        <ion-icon name="md-finger-print" item-start ></ion-icon>
+        <ion-label floating>Registra el codigode inicio de está sesión  </ion-label>
+        <ion-input class="form-control" formControlName="codigo" name="codigo" required  type="number" [(ngModel)]="codigo"></ion-input>
+      </ion-item>
+  <ion-item *ngIf="formCode.get('codigo').errors && formCode.get('codigo').dirty">
+    <p color="danger" ion-text *ngIf="formCode.get('codigo').hasError('required')">El campo no puede estar vacio </p>
+    <p color="danger" ion-text *ngIf="formCode.get('codigo').hasError('minlength')">El campo no cumple con  la cantidad de caracteres</p>
+  </ion-item>   
+  <br>
+  <br>      
+      <button ion-button [disabled]="formCode.invalid"  >Comenzar</button>
+        </form>
+</ion-content>
+

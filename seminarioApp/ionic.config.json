@@ -1,0 +1,8 @@
+{
+  "name": "seminarioApp",
+  "app_id": "0e888baf",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

@@ -1,0 +1,139 @@
+<ion-header>
+<ion-toolbar style="text-align: center;">
+    Preguntas
+</ion-toolbar>
+</ion-header>
+<ion-content>
+<form [formGroup]="formQuestions" (ngSubmit)="test()">  
+   <ion-item>
+       <ion-label>Cuales son pasos claves involucrados en la resolución de problemas
+        </ion-label>
+       <ion-select class="ion-select" formControlName="one" [(ngModel)]="question.one">
+    <ion-option value="a">A. Encontrar hechos / generar ideas / encontrar objetivos</ion-option>       
+    <ion-option value="b">B. Encontrar aprobación/ prepararse para la acción / encontrar problemas
+        </ion-option>       
+    <ion-option value="c">C.Explorar el reto / generar ideas/prepararse para la acción </ion-option>       
+     </ion-select>
+
+   </ion-item>
+   <ion-item>
+        <ion-label>Que es CPS?</ion-label>
+        <ion-select class="ion-select" formControlName="two" [(ngModel)]="question.two">
+     <ion-option value="a">A.Es un sistema que  ayuda a crear normas internas de las empresas 
+        </ion-option>       
+     <ion-option value="b">B.Es un método contrastado por más de 40 años de investigación y resultados en las empresas para resolver retos o problemas de forma imaginativa e innovadora
+        </ion-option>       
+     <ion-option value="c">C.Es un ciclo que permite que las ideas innovadoras puedan arrojar nuevos resultados en las investigaciones de la empresa
+        </ion-option>       
+        </ion-select>
+ 
+    </ion-item>
+    <ion-item>
+            <ion-label>¿Qué es la transferencia de la tecnologia?</ion-label>
+            <ion-select class="ion-select" formControlName="three" [(ngModel)]="question.three">
+         <ion-option value="a">A.Es la forma en qué se adquiere la tecnología para mejor el rendimiento operacional </ion-option>       
+         <ion-option value="b">B.Es la forma para poder transformar el ciclo de las coasas </ion-option>       
+         <ion-option value="c">C.Es el conjunto de acciones orientadas a facilitar el rendimiento comercial en el mercado de las capacidades investigadoras y los resultados de investigación</ion-option>       
+         <ion-option value="d">D.Es una nueva metodología para cambiar las cosas  </ion-option>       
+         </ion-select>
+     
+        </ion-item>
+        <ion-item>
+                <ion-label>Marque los 3 principales conceptos que definen la " lluvia de ideas "
+                    </ion-label>
+                <ion-select class="ion-select" formControlName="four" [(ngModel)]="question.four" multiple="true">
+             <ion-option value="a">A.Basarse en una idea y que los demás sigan complementando esta.</ion-option>       
+             <ion-option value="b">B.Que Cada ponente de una idea diferente y se llegue a una concreta</ion-option>       
+             <ion-option value="c">C.Pasarse las ideas y cada ponente complementa la idea anterior </ion-option>       
+             <ion-option value="d">D.Escribir en papel todas las ideas que te vengan a la mente</ion-option>       
+             <ion-option value="e">E.Que todos los ponentes digan sus ideas al mismo tiempo</ion-option>       
+             <ion-option value="f">F. Que los ponentes definan una idea concreta basada en ideas anteriores</ion-option>       
+            
+            </ion-select>
+         
+            </ion-item>
+
+
+        <ion-item>
+                <ion-label>Marque los 4 pasos de la "lluvia de ideas" 
+                    </ion-label>
+                <ion-select class="ion-select" formControlName="five" [(ngModel)]="question.five" multiple="true">
+             <ion-option value="a">A.Control moderado de ideas </ion-option>       
+             <ion-option value="b">B. Suspender el juicio</ion-option>       
+             <ion-option value="c">C.Realizar un juicio</ion-option>       
+             <ion-option value="d">D. Pensar libremente</ion-option>       
+             <ion-option value="e">E. Buena cantidad de ideas</ion-option>
+             <ion-option value="f">F. El efecto multiplicador</ion-option>
+             </ion-select>
+         
+            </ion-item>
+
+        <ion-item>
+                <ion-label>
+                    ¿ que acciones se pueden tomar para corregir las falencias en el poco conocimiento que se tiene acerca de la fundación? </ion-label>
+                <ion-select class="ion-select" formControlName="six" [(ngModel)]="question.six">
+             <ion-option value="a">A.Las personas pasan la información con amigos y familia (voz a voz)</ion-option>       
+             <ion-option value="b">B.Pautar en diferentes medios de comunicación</ion-option>       
+             <ion-option value="c">C.Publicidad masiva mediante correos electronicos
+            </ion-option>       
+
+             </ion-select>
+         
+            </ion-item>
+            <ion-item>
+                    <ion-label>¿De que manera podemos afrontar los problemas que tienen las personas afro descendientes después de un conflicto armado?</ion-label>
+                    <ion-select class="ion-select" formControlName="seven" [(ngModel)]="question.seven">
+                 <ion-option value="a">A. Realizar un estudio psicológico para determinar que tipo de problemas se generan después del conflicto</ion-option>       
+                 <ion-option value="b">B. Realizar un foto sobre las posibles consecuencias que surge después de un conflicto </ion-option>       
+                 <ion-option value="c">C.realizar un cara a cara entre las víctimas y victimarios </ion-option>       
+                   </ion-select>
+             
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>Como logramos avanzar ante la población afro dependiente sin perder nuestros puntos fuertes</ion-label>
+                    <ion-select class="ion-select" formControlName="eight" [(ngModel)]="eight">
+                 <ion-option value="a">A.realizar conferencias para saber cuales son nuestras falencias y reforzar los puntos buenos </ion-option>       
+                 <ion-option value="b">B.visitar a las familias de descendencia afro americana </ion-option>       
+                 <ion-option value="c">C.realizar foros en internet a las personas afectadas  </ion-option>       
+                   </ion-select>
+             
+                </ion-item>
+                <ion-item>
+                    <ion-label>De a acuerdo a la técnica de los seis sombreros, mencione ¿cuales son los seis colores que representan los seis sombreros? </ion-label>
+                    <ion-select class="ion-select" formControlName="nine" [(ngModel)]="question.nine">
+                 <ion-option value="a">A.negro,blanco,verde,rojo,amarillo</ion-option>       
+                 <ion-option value="b">B. negro,verde,gris,rojo,morado,azul </ion-option>       
+                 <ion-option value="c">C.negro, blanco, verde, amarillo, rojo, azul
+                </ion-option>       
+                   </ion-select>
+             
+                </ion-item>
+                <ion-item>
+                    <ion-label>¿Cual son las fases principales de la técnica de los seis sombreros?</ion-label>
+                    <ion-select class="ion-select" formControlName="ten" [(ngModel)]="question.ten">
+                 <ion-option value="a">A. crear,innovar,eliminar</ion-option>       
+                 <ion-option value="b">B. analizar, crear, evaluar</ion-option>       
+                 <ion-option value="c">C. analizar,evaluar,replantear </ion-option>       
+                   </ion-select>
+             
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>Los resultados que se obtienen en la implementación de la técnica de los seis sombreros puede variar de acuerdo al orden en que se trabajen los colores de los sombreros
+                    </ion-label>
+                    <ion-select class="ion-select" formControlName="eleven" [(ngModel)]="question.eleven">
+                 <ion-option value="a">A. Verdadero</ion-option>       
+                 <ion-option value="b">B. Falso</ion-option>       
+                       
+                   </ion-select>
+             
+                </ion-item>
+                <br>
+                <br>
+                <div style="text-align:center">
+<button ion-button >enviar</button>
+             </div>
+</form>
+
+</ion-content>

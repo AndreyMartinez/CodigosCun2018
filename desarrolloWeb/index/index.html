@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon"  href="../asets/img/if_ok_2308122.png">
+    <script type="text/javascript" src="./index.js"></script> 
+    <title>Raphael M</title>
+</head>
+<body>
+    <header>
+         <h1>Formulario taller #1</h1>
+     <strong> Raphael Andrey Martinez Velásquez </strong>
+        </header>
+        <div>
+
+                <form class="form">
+                        <fieldset>
+                                 <legend>Datos personales</legend>
+                                 <label>Nombre <input class="nombre" placeholder="Nombre" name="nombre" type="text" required></label>
+                                 <br>
+                                 <label>Apellido <input class="apellido" name="apellido"placeholder="Apellido" type="text" required></label>
+                                 <br>
+                                 <label>Tipo Documento      <select class="tipoDocumento" name="tipoDocumento">
+                                     <optgroup  label="Tipo Documento">
+                                     <option value="cc">CC</option>
+                                         <option value ="ti">TI</option>
+                                    <option value="pasaporte"> Pasaporte</option>
+                                     </optgroup>
+                                     </select></label>
+                                     <br>
+                                <label>Identificación <input class="identificacion" type="number" name="identificacion "placeholder="Identificación" min="5" max="14"></label>     
+                               <br>
+                                <label> Fecha nacimiento <input class="fechaNacimiento" name="fechaNacimiento" type="date" max="2014-01-31" data-date-format="DD MM YYYY"></label>
+                                <br>
+                                <label>Edad <input class="edad" type="number" name="edad" placeholder="edad"   min="7" max="106"></label>
+                               <br>
+                                <label>Dirección <input class="direccion" type="text" name="direccion" placeholder="direccion"></label>    
+                            <br>
+                                <label>No. Teléfono <input class="telefono" name="telefono" type="tel" placeholder="telefono">  </label>
+                            <br>
+                                <label> No. Celular <input class="celular" name="celular" type="tel" placeholder="celular"></label>
+                            
+                         </fieldset>
+                         <fieldset>
+                             <legend>Hobbies       </legend>
+                             <label><input type="checkbox" 
+                  class="bailar"                         value="bailar">Bailar</label>
+                             <label><input type="checkbox" value="deportes">Deportes </label>
+                             <label><input type="checkbox" value="ciencia">Ciencia</label>
+                             <label><input type="checkbox" value="literatura">Literatura</label>
+                         </fieldset>
+                         <br>
+                         <input class="enviar" type="submit" value="enviar">
+                         </form>
+<hr>
+<h1 class="mostrarEdad"></h1>>
+        </div>
+            <footer>
+<p>  Ingenieria de sistemas </p>
+<p> <strong>Repositorio GIT: </strong>https://github.com/AndreyMartinez/CodigosCun2018.git</p>
+<p> <strong>CODEpen: </strong> https://codepen.io/andreymartinez/pen/erJado </p>     
+<p> Este proyecto de desarrollo web tiene licencia del MIT</p>   
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+page-home {
+    .found{
+        background-image: url("../assets/imgs/found.jpeg");
+        background-size: cover;
+background-position: center;
+position:absolute;
+width:100%;
+height:100%;
+top:0;
+left:0;
+filter: sepia(73%);
+
+    }
+}
+.alert-wrapper{
+    border-radius: 10% !important;
+}
+.alert-head{
+    text-align: center !important;
+}
+.alert-button{
+right: 33% !important;
+
+}
