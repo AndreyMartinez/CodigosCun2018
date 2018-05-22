@@ -1,0 +1,34 @@
+.masthead{
+opacity: 0.7;
+}
+.mb-5{
+   color:black;
+}
+h1.mb-1{
+color:black;
+}
+.introduccion{
+    display:flex;
+}
+
+
+/* //Elementos secundarios */
+.elementContent{
+    display: flex;
+    align-content: flex-end;
+    left: 12%;
+    position: relative;
+}
+.oneElement{
+    color:black;
+ }
+ .twoElement{
+     color: white;
+ }
+ .icon-like{
+     color:black;
+ }
+ .img{
+     width: 300px;
+     height: 200px;
+ }
