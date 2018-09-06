@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./index.css" />
+    <script type="text/javascript" src="./lib/jquery-3.3.1.min.js" ></script>
+    <script src="./index.js"></script>
+    
 </head>
 
 <body>
@@ -16,15 +18,16 @@
     </section>
     <header class="header">
         <nav>
-            <a href="">Perro</a>
-            <a href="">Gato</a>
-            <a href="">Loro</a>
+            <a onclick="reloadPage('pages/dogPage.html')">Perro</a>
+            <a onclick="reloadPage('pages/catPage.html')">Gato</a>
+            <a onclick="reloadPage('pages/parrotPage.html')">Loro</a>
         </nav>
 
     </header>
 
-    <div class="content">
-        <article class="article">
+    <div class="content" id="content">
+        <article class="article" >
+            <h1>CONTENIDO DE MUESTRA INICIO</h1>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tempore assumenda mollitia excepturi molestias pariatur placeat
             hic eligendi debitis, unde repellendus, incidunt reiciendis illo nisi magni doloribus dolores esse deserunt!
             Ex recusandae odio laboriosam, sint distinctio, reprehenderit, ullam omnis tempora ipsum labore illum cum asperiores.
@@ -60,6 +63,8 @@
 
         <p>Raphael Andrey Martinez V</p>
         <p>Ingenieria de sistemas </p>
+        <a href="https://github.com/AndreyMartinez/CodigosCun2018/tree/master/sobreCargaAjax">
+            Repositorio git</a>
         <p>CUN </p>
     </footer>
 </body>
