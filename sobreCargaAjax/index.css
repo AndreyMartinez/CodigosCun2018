@@ -8,45 +8,57 @@ body{
     margin: 0px;
 background-color: var(--primary)
 }
-.header{
+.section{
     width: 100%;
-    justify-content: center;
-    font-size: 1em;
-    display:flex;
+    height: 15vh;
     color:var(--third);
-   background-color: var(--secondary)
+    background-color: var(--secondary)
 }
-.wrapper{
-    display:flex;
+.section span{
+    padding: 30px;
+    font-size: 200%;
+    text-align: center;
+    line-height: 1;
+    display: block;
+    font-weight: 700;
 }
-.menu{
-    width: 15%;
-    font-size: 2em;
-    height: 230px;
-background-color: var(--primary)
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-li{
-width: 100%;
 
-margin:18px 3px;
-}
-.navigation{
-text-decoration: none;
-color:black;
-}
-.navigation:hover{
-    color: var(--secondary);
-}
+header {
+    width: 100%;
+    padding: 0.7em;
+    font-size: 130%;
+    top: 30vh;
+    text-align: center;
+  }
+
+  nav a {
+    text-decoration: none;
+    opacity: .7;
+    padding: 0 .5em;
+    width: 10%;
+    margin: 0 4px;
+    color: black;
+    transition: opacity .3s ease-in-out;
+  }
+  nav a:hover
+   {
+    opacity: 0.1;
+  }
 
 .content{
-    width: 85%;
+    margin:1em 5em;
+    text-align: center;
     background-color: var(--third);
 }
+.article{
+    margin:  10px 110px;
+    text-align:  justify;
+}
 .footer{
+    padding: 10px;
+  width: 100%;
+  border-radius: 0;
+  position: relative;
     text-align: center;
     color:var(--third);
     background-color: var(--secondary);
